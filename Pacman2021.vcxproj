@@ -23,7 +23,7 @@
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{850d4c28-2d17-4f4c-bb5b-fa88d7d30352}</ProjectGuid>
     <RootNamespace>Pacman2021</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -155,16 +155,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Font Include="20706.otf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="HighScore.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="my_labyrinth.png" />
-    <Image Include="things.png" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets" Condition="Exists('packages\sfml-graphics.redist.2.4.2.0\build\native\sfml-graphics.redist.targets')" />
@@ -173,6 +163,12 @@
     <Import Project="packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets" Condition="Exists('packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets')" />
     <Import Project="packages\sfml-window.2.4.2.0\build\native\sfml-window.targets" Condition="Exists('packages\sfml-window.2.4.2.0\build\native\sfml-window.targets')" />
     <Import Project="packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets" Condition="Exists('packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets')" />
+    <Import Project="packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets" Condition="Exists('packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets')" />
+    <Import Project="packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets" Condition="Exists('packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets')" />
+    <Import Project="packages\sfml_system.2.5.1\build\native\sfml_system.targets" Condition="Exists('packages\sfml_system.2.5.1\build\native\sfml_system.targets')" />
+    <Import Project="packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets" Condition="Exists('packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets')" />
+    <Import Project="packages\sfml_window.2.5.1\build\native\sfml_window.targets" Condition="Exists('packages\sfml_window.2.5.1\build\native\sfml_window.targets')" />
+    <Import Project="packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets" Condition="Exists('packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
@@ -184,5 +180,11 @@
     <Error Condition="!Exists('packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml-window.redist.2.4.2.0\build\native\sfml-window.redist.targets'))" />
     <Error Condition="!Exists('packages\sfml-window.2.4.2.0\build\native\sfml-window.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml-window.2.4.2.0\build\native\sfml-window.targets'))" />
     <Error Condition="!Exists('packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml-graphics.2.4.2.0\build\native\sfml-graphics.targets'))" />
+    <Error Condition="!Exists('packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_system.2.5.1\build\native\sfml_system.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_system.2.5.1\build\native\sfml_system.targets'))" />
+    <Error Condition="!Exists('packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_window.2.5.1\build\native\sfml_window.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_window.2.5.1\build\native\sfml_window.targets'))" />
+    <Error Condition="!Exists('packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets'))" />
   </Target>
 </Project>
